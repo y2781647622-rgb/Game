@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>深渊厨房 Abyss Kitchen · V16.1 经济平衡版</title>
+<title>深渊厨房 Abyss Kitchen </title>
 <style>
 :root{
   --bg:#070606;--panel:#181311;--panel2:#281b16;--line:#76513a;--line2:#d98b42;
@@ -51,10 +51,68 @@ h1.brand-en{margin:4px 0 16px;font-size:clamp(26px,3.7vw,48px);letter-spacing:.1
 .seed-drop{color:#9dffad!important}.weaponCard[data-map=""] .mapAffinity{border-color:rgba(255,216,91,.28);color:#ffd85b;background:rgba(255,216,91,.05)}
 @media(max-width:850px){.seed-grid,.garden-grid{grid-template-columns:repeat(2,1fr)}h1.brand-en{white-space:normal}}
 
+
+/* ========================= V16.2 · FULLSCREEN DISPLAY ========================= */
+:root{
+  --game-scale:1;
+  --game-base-width:1180px;
+  --game-base-height:760px;
+}
+html,body{width:100%;height:100%;min-width:0;min-height:0;overflow:hidden}
+body{overscroll-behavior:none;touch-action:none}
+#wrap{
+  position:fixed;inset:0;
+  width:100vw;height:100vh;height:100dvh;
+  padding:0;margin:0;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+#game{
+  width:var(--game-base-width);
+  height:var(--game-base-height);
+  min-width:var(--game-base-width);
+  min-height:var(--game-base-height);
+  max-width:none;max-height:none;
+  flex:0 0 auto;
+  transform:translateZ(0) scale(var(--game-scale));
+  transform-origin:center center;
+  will-change:transform;
+  backface-visibility:hidden;
+}
+#displayControls{
+  position:absolute;z-index:90;
+  top:9px;left:50%;transform:translateX(-50%);
+  display:flex;align-items:center;gap:6px;
+  opacity:.48;transition:opacity .16s ease;
+}
+#displayControls:hover,#displayControls:focus-within{opacity:1}
+#displayControls button{
+  min-width:88px;padding:7px 10px;
+  border-color:rgba(255,216,91,.58);
+  background:rgba(10,8,8,.82);
+  color:#ffe9a6;
+  box-shadow:0 4px 15px rgba(0,0,0,.5);
+  backdrop-filter:blur(6px);
+}
+#displayControls .displayHint{
+  padding:5px 8px;border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;background:rgba(0,0,0,.58);
+  color:#bdb3aa;font-size:9px;white-space:nowrap;
+}
+body.display-fullscreen #game{border-radius:0}
+body.display-fullscreen #displayControls{opacity:.34}
+body.display-fullscreen #displayControls:hover{opacity:1}
+@media (max-width:680px){
+  #displayControls .displayHint{display:none}
+  #displayControls button{min-width:70px;padding:7px 8px;font-size:11px}
+}
+/* ============================================================================ */
+
 </style>
 </head>
 <body><div id="wrap"><div id="game">
 <canvas id="canvas" width="1160" height="740"></canvas>
+<div id="displayControls"><button id="fullscreenBtn" type="button" onclick="displayMode.toggleFullscreen()">⛶ 全屏</button><span class="displayHint">F 全屏 · ESC 退出</span></div>
 <div id="hud" class="hidden">
   <div class="hudbox">
     <div class="pixel gold">DAY <span id="dayText">1</span> · <span id="phaseText">准备</span></div>
@@ -695,6 +753,65 @@ Object.assign(game,{
  }
 });
 /* ====================================================================== */
+
+
+/* ========================= V16.2 · FULLSCREEN DISPLAY ========================= */
+window.displayMode={
+  baseWidth:1180,
+  baseHeight:760,
+  lastScale:1,
+  fit(){
+    const viewport=window.visualViewport;
+    const vw=Math.max(1,viewport?viewport.width:window.innerWidth);
+    const vh=Math.max(1,viewport?viewport.height:window.innerHeight);
+    const scale=Math.min(vw/this.baseWidth,vh/this.baseHeight);
+    this.lastScale=scale;
+    document.documentElement.style.setProperty('--game-scale',String(scale));
+  },
+  async toggleFullscreen(){
+    try{
+      if(!document.fullscreenElement){
+        const target=document.documentElement;
+        if(target.requestFullscreen)await target.requestFullscreen({navigationUI:'hide'});
+        else if(target.webkitRequestFullscreen)target.webkitRequestFullscreen();
+      }else{
+        if(document.exitFullscreen)await document.exitFullscreen();
+        else if(document.webkitExitFullscreen)document.webkitExitFullscreen();
+      }
+    }catch(err){
+      console.warn('Fullscreen request failed:',err);
+      if(window.game&&game.toast)game.toast('浏览器未允许全屏，请使用 F11 或浏览器菜单');
+    }
+  },
+  sync(){
+    const full=!!(document.fullscreenElement||document.webkitFullscreenElement);
+    document.body.classList.toggle('display-fullscreen',full);
+    const btn=document.getElementById('fullscreenBtn');
+    if(btn){
+      btn.textContent=full?'⛶ 退出全屏':'⛶ 全屏';
+      btn.setAttribute('aria-pressed',full?'true':'false');
+      btn.title=full?'退出全屏（ESC）':'进入全屏（F）';
+    }
+    requestAnimationFrame(()=>this.fit());
+  },
+  init(){
+    this.fit();
+    window.addEventListener('resize',()=>this.fit(),{passive:true});
+    window.addEventListener('orientationchange',()=>setTimeout(()=>this.fit(),80),{passive:true});
+    if(window.visualViewport)window.visualViewport.addEventListener('resize',()=>this.fit(),{passive:true});
+    document.addEventListener('fullscreenchange',()=>this.sync());
+    document.addEventListener('webkitfullscreenchange',()=>this.sync());
+    window.addEventListener('keydown',e=>{
+      const tag=(e.target&&e.target.tagName)||'';
+      if(e.key&&e.key.toLowerCase()==='f'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!['INPUT','TEXTAREA','SELECT'].includes(tag)){
+        e.preventDefault();this.toggleFullscreen();
+      }
+    });
+    this.sync();
+  }
+};
+displayMode.init();
+/* ============================================================================ */
 
 game.init();
 </script></body></html>
