@@ -1,0 +1,651 @@
+{
+  "rows": [
+    {
+      "day": 1,
+      "gold": 426,
+      "income": 271,
+      "cost": 0,
+      "rent": 0,
+      "rentRatio": 0,
+      "mastery": 16,
+      "sink": 0
+    },
+    {
+      "day": 2,
+      "gold": 400,
+      "income": 278,
+      "cost": 24,
+      "rent": 14,
+      "rentRatio": 5,
+      "mastery": 31,
+      "sink": 1
+    },
+    {
+      "day": 3,
+      "gold": 323,
+      "income": 271,
+      "cost": 28,
+      "rent": 16,
+      "rentRatio": 5.9,
+      "mastery": 47,
+      "sink": 2
+    },
+    {
+      "day": 4,
+      "gold": 267,
+      "income": 279,
+      "cost": 55,
+      "rent": 18,
+      "rentRatio": 6.5,
+      "mastery": 63,
+      "sink": 3
+    },
+    {
+      "day": 5,
+      "gold": 276,
+      "income": 331,
+      "cost": 62,
+      "rent": 20,
+      "rentRatio": 6,
+      "mastery": 79,
+      "sink": 4
+    },
+    {
+      "day": 6,
+      "gold": 533,
+      "income": 326,
+      "cost": 69,
+      "rent": 22,
+      "rentRatio": 6.7,
+      "mastery": 95,
+      "sink": 4
+    },
+    {
+      "day": 7,
+      "gold": 574,
+      "income": 342,
+      "cost": 71,
+      "rent": 24,
+      "rentRatio": 7,
+      "mastery": 100,
+      "sink": 5
+    },
+    {
+      "day": 8,
+      "gold": 428,
+      "income": 424,
+      "cost": 110,
+      "rent": 38,
+      "rentRatio": 9,
+      "mastery": 100,
+      "sink": 6
+    },
+    {
+      "day": 9,
+      "gold": 415,
+      "income": 431,
+      "cost": 114,
+      "rent": 40,
+      "rentRatio": 9.3,
+      "mastery": 100,
+      "sink": 7
+    },
+    {
+      "day": 10,
+      "gold": 722,
+      "income": 424,
+      "cost": 117,
+      "rent": 42,
+      "rentRatio": 9.9,
+      "mastery": 100,
+      "sink": 7
+    },
+    {
+      "day": 11,
+      "gold": 340,
+      "income": 428,
+      "cost": 130,
+      "rent": 44,
+      "rentRatio": 10.3,
+      "mastery": 100,
+      "sink": 8
+    },
+    {
+      "day": 12,
+      "gold": 656,
+      "income": 428,
+      "cost": 112,
+      "rent": 46,
+      "rentRatio": 10.7,
+      "mastery": 100,
+      "sink": 8
+    },
+    {
+      "day": 13,
+      "gold": 332,
+      "income": 446,
+      "cost": 120,
+      "rent": 48,
+      "rentRatio": 10.8,
+      "mastery": 100,
+      "sink": 9
+    },
+    {
+      "day": 14,
+      "gold": 842,
+      "income": 431,
+      "cost": 161,
+      "rent": 50,
+      "rentRatio": 11.6,
+      "mastery": 100,
+      "sink": 9
+    },
+    {
+      "day": 15,
+      "gold": 544,
+      "income": 532,
+      "cost": 190,
+      "rent": 64,
+      "rentRatio": 12,
+      "mastery": 100,
+      "sink": 10
+    },
+    {
+      "day": 16,
+      "gold": 443,
+      "income": 533,
+      "cost": 204,
+      "rent": 66,
+      "rentRatio": 12.4,
+      "mastery": 100,
+      "sink": 11
+    },
+    {
+      "day": 17,
+      "gold": 832,
+      "income": 595,
+      "cost": 206,
+      "rent": 68,
+      "rentRatio": 11.4,
+      "mastery": 100,
+      "sink": 11
+    },
+    {
+      "day": 18,
+      "gold": 544,
+      "income": 527,
+      "cost": 215,
+      "rent": 70,
+      "rentRatio": 13.3,
+      "mastery": 100,
+      "sink": 12
+    },
+    {
+      "day": 19,
+      "gold": 308,
+      "income": 524,
+      "cost": 220,
+      "rent": 72,
+      "rentRatio": 13.7,
+      "mastery": 100,
+      "sink": 13
+    },
+    {
+      "day": 20,
+      "gold": 642,
+      "income": 540,
+      "cost": 206,
+      "rent": 74,
+      "rentRatio": 13.7,
+      "mastery": 100,
+      "sink": 13
+    },
+    {
+      "day": 21,
+      "gold": 1259,
+      "income": 532,
+      "cost": 215,
+      "rent": 76,
+      "rentRatio": 14.3,
+      "mastery": 100,
+      "sink": 13
+    },
+    {
+      "day": 22,
+      "gold": 673,
+      "income": 681,
+      "cost": 287,
+      "rent": 90,
+      "rentRatio": 13.2,
+      "mastery": 100,
+      "sink": 14
+    },
+    {
+      "day": 23,
+      "gold": 982,
+      "income": 621,
+      "cost": 312,
+      "rent": 92,
+      "rentRatio": 14.8,
+      "mastery": 100,
+      "sink": 14
+    },
+    {
+      "day": 24,
+      "gold": 437,
+      "income": 627,
+      "cost": 282,
+      "rent": 94,
+      "rentRatio": 15,
+      "mastery": 100,
+      "sink": 15
+    },
+    {
+      "day": 25,
+      "gold": 797,
+      "income": 651,
+      "cost": 291,
+      "rent": 96,
+      "rentRatio": 14.7,
+      "mastery": 100,
+      "sink": 15
+    },
+    {
+      "day": 26,
+      "gold": 375,
+      "income": 648,
+      "cost": 320,
+      "rent": 98,
+      "rentRatio": 15.1,
+      "mastery": 100,
+      "sink": 16
+    },
+    {
+      "day": 27,
+      "gold": 641,
+      "income": 611,
+      "cost": 345,
+      "rent": 100,
+      "rentRatio": 16.4,
+      "mastery": 100,
+      "sink": 16
+    },
+    {
+      "day": 28,
+      "gold": 1343,
+      "income": 657,
+      "cost": 315,
+      "rent": 102,
+      "rentRatio": 15.5,
+      "mastery": 100,
+      "sink": 16
+    },
+    {
+      "day": 29,
+      "gold": 459,
+      "income": 794,
+      "cost": 398,
+      "rent": 116,
+      "rentRatio": 14.6,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 30,
+      "gold": 745,
+      "income": 710,
+      "cost": 424,
+      "rent": 118,
+      "rentRatio": 16.6,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 31,
+      "gold": 1114,
+      "income": 761,
+      "cost": 392,
+      "rent": 120,
+      "rentRatio": 15.8,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 32,
+      "gold": 608,
+      "income": 721,
+      "cost": 427,
+      "rent": 122,
+      "rentRatio": 16.9,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 33,
+      "gold": 874,
+      "income": 710,
+      "cost": 444,
+      "rent": 124,
+      "rentRatio": 17.5,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 34,
+      "gold": 1223,
+      "income": 796,
+      "cost": 447,
+      "rent": 126,
+      "rentRatio": 15.8,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 35,
+      "gold": 1896,
+      "income": 726,
+      "cost": 473,
+      "rent": 128,
+      "rentRatio": 17.6,
+      "mastery": 100,
+      "sink": 17
+    },
+    {
+      "day": 36,
+      "gold": 414,
+      "income": 843,
+      "cost": 525,
+      "rent": 142,
+      "rentRatio": 16.8,
+      "mastery": 100,
+      "sink": 18
+    },
+    {
+      "day": 37,
+      "gold": 758,
+      "income": 880,
+      "cost": 536,
+      "rent": 144,
+      "rentRatio": 16.4,
+      "mastery": 100,
+      "sink": 18
+    },
+    {
+      "day": 38,
+      "gold": 1073,
+      "income": 869,
+      "cost": 554,
+      "rent": 146,
+      "rentRatio": 16.8,
+      "mastery": 100,
+      "sink": 18
+    },
+    {
+      "day": 39,
+      "gold": 1359,
+      "income": 843,
+      "cost": 557,
+      "rent": 148,
+      "rentRatio": 17.6,
+      "mastery": 100,
+      "sink": 18
+    },
+    {
+      "day": 40,
+      "gold": 1712,
+      "income": 893,
+      "cost": 540,
+      "rent": 150,
+      "rentRatio": 16.8,
+      "mastery": 100,
+      "sink": 18
+    },
+    {
+      "day": 41,
+      "gold": 1032,
+      "income": 1405,
+      "cost": 585,
+      "rent": 152,
+      "rentRatio": 10.8,
+      "mastery": 100,
+      "sink": 19
+    },
+    {
+      "day": 42,
+      "gold": 2311,
+      "income": 1387,
+      "cost": 588,
+      "rent": 154,
+      "rentRatio": 11.1,
+      "mastery": 100,
+      "sink": 19
+    },
+    {
+      "day": 43,
+      "gold": 1856,
+      "income": 2011,
+      "cost": 666,
+      "rent": 168,
+      "rentRatio": 8.4,
+      "mastery": 100,
+      "sink": 20
+    },
+    {
+      "day": 44,
+      "gold": 3169,
+      "income": 1990,
+      "cost": 677,
+      "rent": 170,
+      "rentRatio": 8.5,
+      "mastery": 100,
+      "sink": 20
+    },
+    {
+      "day": 45,
+      "gold": 1669,
+      "income": 2199,
+      "cost": 699,
+      "rent": 172,
+      "rentRatio": 7.8,
+      "mastery": 100,
+      "sink": 21
+    },
+    {
+      "day": 46,
+      "gold": 3090,
+      "income": 2179,
+      "cost": 758,
+      "rent": 174,
+      "rentRatio": 8,
+      "mastery": 100,
+      "sink": 21
+    },
+    {
+      "day": 47,
+      "gold": 2730,
+      "income": 2590,
+      "cost": 750,
+      "rent": 176,
+      "rentRatio": 6.8,
+      "mastery": 100,
+      "sink": 22
+    },
+    {
+      "day": 48,
+      "gold": 2314,
+      "income": 2946,
+      "cost": 762,
+      "rent": 178,
+      "rentRatio": 6,
+      "mastery": 100,
+      "sink": 23
+    },
+    {
+      "day": 49,
+      "gold": 5082,
+      "income": 2972,
+      "cost": 744,
+      "rent": 180,
+      "rentRatio": 6.1,
+      "mastery": 100,
+      "sink": 23
+    },
+    {
+      "day": 50,
+      "gold": 4953,
+      "income": 3702,
+      "cost": 831,
+      "rent": 194,
+      "rentRatio": 5.2,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 51,
+      "gold": 7720,
+      "income": 3641,
+      "cost": 874,
+      "rent": 196,
+      "rentRatio": 5.4,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 52,
+      "gold": 10871,
+      "income": 4037,
+      "cost": 886,
+      "rent": 198,
+      "rentRatio": 4.9,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 53,
+      "gold": 13650,
+      "income": 3677,
+      "cost": 898,
+      "rent": 200,
+      "rentRatio": 5.4,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 54,
+      "gold": 16430,
+      "income": 3659,
+      "cost": 879,
+      "rent": 202,
+      "rentRatio": 5.5,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 55,
+      "gold": 19554,
+      "income": 4045,
+      "cost": 921,
+      "rent": 204,
+      "rentRatio": 5,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 56,
+      "gold": 22860,
+      "income": 3648,
+      "cost": 942,
+      "rent": 206,
+      "rentRatio": 5.6,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 57,
+      "gold": 26231,
+      "income": 4402,
+      "cost": 1031,
+      "rent": 220,
+      "rentRatio": 5,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 58,
+      "gold": 29193,
+      "income": 4006,
+      "cost": 1044,
+      "rent": 222,
+      "rentRatio": 5.5,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 59,
+      "gold": 32203,
+      "income": 4034,
+      "cost": 1024,
+      "rent": 224,
+      "rentRatio": 5.6,
+      "mastery": 100,
+      "sink": 24
+    },
+    {
+      "day": 60,
+      "gold": 35118,
+      "income": 4006,
+      "cost": 1091,
+      "rent": 226,
+      "rentRatio": 5.6,
+      "mastery": 100,
+      "sink": 24
+    }
+  ],
+  "summary": {
+    "d3": {
+      "day": 3,
+      "gold": 323,
+      "income": 271,
+      "cost": 28,
+      "rent": 16,
+      "rentRatio": 5.9,
+      "mastery": 47,
+      "sink": 2
+    },
+    "d10": {
+      "day": 10,
+      "gold": 722,
+      "income": 424,
+      "cost": 117,
+      "rent": 42,
+      "rentRatio": 9.9,
+      "mastery": 100,
+      "sink": 7
+    },
+    "d30": {
+      "day": 30,
+      "gold": 745,
+      "income": 710,
+      "cost": 424,
+      "rent": 118,
+      "rentRatio": 16.6,
+      "mastery": 100,
+      "sink": 17
+    },
+    "d60": {
+      "day": 60,
+      "gold": 35118,
+      "income": 4006,
+      "cost": 1091,
+      "rent": 226,
+      "rentRatio": 5.6,
+      "mastery": 100,
+      "sink": 24
+    },
+    "masteryDay": 7,
+    "sinkDay": 0,
+    "debtDays": 0,
+    "peakGold": 35118,
+    "avgRentRatio": 10.6
+  }
+}
